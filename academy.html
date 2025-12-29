@@ -1,47 +1,50 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Subjects | Sapienza Academy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Subjects | Sapienza Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-
+  <!-- H1 outside section-->
+  <header>
     <h1>Sapienza Comprehensive Academy</h1>
- 
-    <!-- Subject Sections -->
+  </header>
+
+  <div class="subjects-container">
+    <!-- Math Section -->
     <section class="subject">
-        <h2>Web Development</h2>
-        <p>Price: ₦50,000</p>
-        <div class="slideshow" id="webDevSlideshow">
-            <img src="images/web1.jpg" alt="Web Dev 1">
-            <img src="images/web2.jpg" alt="Web Dev 2">
-        </div>
+      <div class="slideshow" id="mathSlideshow">
+        <img src="images/math.jpg" alt="Math 1">
+        <img src="images/math2.jpg" alt="Math 2">
+      </div>
+      <h2>Mathematics</h2>
+      <p>Price: ₦25,000</p>
     </section>
 
+    <!-- English Section -->
     <section class="subject">
-        <h2>Graphics Design</h2>
-        <p>Price: ₦40,000</p>
-        <div class="slideshow" id="designSlideshow">
-            <img src="images/design1.jpg" alt="Design 1">
-            <img src="images/design2.jpg" alt="Design 2">
-        </div>
+      <div class="slideshow" id="englishSlideshow">
+        <img src="images/english.jpg" alt="English 1">
+        <img src="images/english2.jpg" alt="English 2">
+      </div>
+      <h2>English</h2>
+      <p>Price: ₦20,000</p>
     </section>
 
+    <!-- Science Section -->
     <section class="subject">
-        <h2>Programming Basics</h2>
-        <p>Price: ₦30,000</p>
-        <div class="slideshow" id="programmingSlideshow">
-            <img src="images/prog1.jpg" alt="Programming 1">
-            <img src="images/prog2.jpg" alt="Programming 2">
-        </div>
+      <div class="slideshow" id="scienceSlideshow">
+        <img src="images/science1.jpg" alt="Science 1">
+        <img src="images/science2.jpg" alt="Science 2">
+      </div>
+      <h2>Science</h2>
+      <p>Price: ₦30,000</p>
     </section>
+  </div>
 
-    <script src="subjects.js"></script>
+<script src="subjects.js"></script>
 </body>
-
 </html>
