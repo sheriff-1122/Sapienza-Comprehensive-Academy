@@ -1,31 +1,83 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sapienza Comprehensive Academy</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <nav class="navbar">
-     
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Sapienza Comprehensive Academy</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <nav class="navbar">
       <ul>
          <li><a href="#">Home</a></li>
          <li><a href="about.html">About</a></li>
          <li><a href="contact.html">Contact</a></li>
       </ul>
-     
    </nav>
- 
-   
-   <h1> Sapienza Comprehensive Academy</h1>
- 
+
+   <section class="intro">
+      <h1>Sapienza Comprehensive Academy</h1>
+
+      <p class="description">
+         At Sapienza Comprehensive Academy, we are committed to shaping the future of learners across elementary,
+         middle, and high school levels.
+      </p>
+   </section>
+
+  <!-- MATHEMATICS SECTION -->
+<section class="subject-section">
+  <h2>Mathematics</h2>
+
+  <div class="subject-content">
+    <p>Learn numbers, algebra, geometry, and problem-solving skills for all levels.</p>
+
+    <div class="slideshow">
+      <img src="images/math.jpg" class="slide active">
+      <img src="images/math2.jpg" class="slide">
+      <img src="images/math-3.jpg" class="slide">
+      <img src="images/math-4.jpg" class="slide">
+      <img src="images/math5.jpg" class="slide">
+    </div>
+  </div>
+</section>
+
+<!-- ENGLISH SECTION -->
+<section class="subject-section">
+  <h2>English Language</h2>
+
+  <div class="subject-content">
+    <p>Improve reading, writing, grammar, and communication skills.</p>
+
+    <div class="slideshow">
+      <img src="images/english.jpg" class="slide active">
+      <img src="images/english-2.jpg" class="slide">
+      <img src="images/english3.jpg" class="slide">
+      <img src="images/english4.jpg" class="slide">
+      <img src="images/english5.jpg" class="slide">
+    </div>
+  </div>
+</section>
 
 
 
+ <script>
+  document.querySelectorAll(".slideshow").forEach(slideshow => {
+    const slides = slideshow.querySelectorAll(".slide");
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 3000); // change image every 3 seconds
+  });
+</script>
 
 
 
-    
 </body>
- </html>
+
+</html>
