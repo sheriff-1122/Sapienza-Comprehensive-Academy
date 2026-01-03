@@ -1,0 +1,38 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.page-title {
+  background-color:#464be8;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  font-size: 28px;
+}
+
+/* CONTACT INFO */
+.contact {
+  padding: 30px 12%;
+  font-size: 16px;
+}
+
+.contact p {
+  margin-bottom: 12px;
+}
+
+/* PHONE FIT */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 22px;
+    padding: 16px;
+  }
+
+  .contact {
+    padding: 20px 6%;
+    font-size: 14px;
+  }
+}
