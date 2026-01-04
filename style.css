@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding-top: 80px;
 }
+ 
+
 
 /* NAVBAR */
 .navbar {
@@ -35,7 +37,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #422801;
+  color:aqua;
 }
 
 /* INTRO SECTION */
@@ -56,7 +58,7 @@ body {
 }
 .subject-section {
   padding: 60px 20px;
-  background-color: #fff8f7;
+  background-color: ;
   border-bottom: 1px solid #ddd;
 }
 
@@ -173,3 +175,4 @@ body {
 }
 
 }
+ 
