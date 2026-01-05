@@ -67,24 +67,7 @@ body {
   max-width: 700px;
   margin: auto;
 }
- .subject-section {
-  padding: 60px 20px;
-
-  /* Replace solid color with gradient blur */
-  background: linear-gradient(
-      135deg,
-      #fff2ee,   /* very light coral / soft white */
-      #464be8,   /* soft blue */
-      #ffffff    /* fade to white */
-  );
-  
-  backdrop-filter: blur(12px); /* subtle blur inside the section */
-  -webkit-backdrop-filter: blur(12px); /* Safari support */
-
-  border-bottom: 1px solid #ddd;
-  border-radius: 15px; /* optional for softer look */
-  color: #333; /* make text readable */
-}
+ 
 
 .subject-section h2 {
   text-align: center;
@@ -100,6 +83,11 @@ body {
   gap: 40px;
   align-items: center;
   flex-wrap: wrap;
+}
+.subject-section {
+  padding: 60px 20px;
+  background-color:#FEFDF8;
+  border-bottom: 1px solid #ddd;
 }
 
 .subject-content p {
