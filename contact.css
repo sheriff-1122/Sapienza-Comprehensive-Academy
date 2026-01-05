@@ -60,15 +60,22 @@ body {
 }
 
 /* PAGE TITLE */
-.page-title {
-  background-color: rgba(70, 75, 232, 0.9); /* slightly transparent for blur */
-  color: white;
-  text-align: center;
-  padding: 22px;
-  font-size: 28px;
-  margin: 20px auto;
-  border-radius: 12px;
+ .page-title {
+  position: sticky;          /* FIXED ISSUE */
+  top: 100px;                /* sits below navbar */
+  margin: 0 auto 40px;
   width: fit-content;
+
+  background-color: #fff;
+  color: #464be8;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+
+  z-index: 10;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* CONTACT SECTION */
