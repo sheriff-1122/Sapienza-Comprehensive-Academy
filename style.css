@@ -1,30 +1,38 @@
-  /* Push content below fixed navbar */
+/* ==============================
+   RESET & BODY
+============================== */
 body {
   margin: 0;
   padding-top: 80px;
+  font-family: Arial, sans-serif;
 }
- .blur-bg {
+
+/* ==============================
+   BLUR BACKGROUND
+============================== */
+.blur-bg {
   position: fixed;
   inset: 0;
   background: linear-gradient(
-      white,   /* very light coral */
-     #464be8 ,   /* soft coral */
-    #ffffff    /* fade to white */
+    #ffffff,
+    #464be8,
+    #ffffff
   );
   filter: blur(18px);
   transform: scale(1.1);
   z-index: -1;
 }
 
-
-/* NAVBAR */
+/* ==============================
+   NAVBAR
+============================== */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  background-color:#464be8;
+  background-color: #464be8;
   z-index: 1000;
 
   display: flex;
@@ -48,10 +56,12 @@ body {
 }
 
 .navbar a:hover {
-  color:aqua;
+  color: aqua;
 }
 
-/* INTRO SECTION */
+/* ==============================
+   INTRO SECTION
+============================== */
 .intro {
   text-align: center;
   padding: 40px 20px;
@@ -67,7 +77,15 @@ body {
   max-width: 700px;
   margin: auto;
 }
- 
+
+/* ==============================
+   SUBJECT SECTION
+============================== */
+.subject-section {
+  padding: 60px 20px;
+  background-color: #FEFDF8;
+  border-bottom: 1px solid #ddd;
+}
 
 .subject-section h2 {
   text-align: center;
@@ -82,12 +100,6 @@ body {
   display: flex;
   gap: 40px;
   align-items: center;
-  flex-wrap: wrap;
-}
-.subject-section {
-  padding: 60px 20px;
-  background-color:#FEFDF8;
-  border-bottom: 1px solid #ddd;
 }
 
 .subject-content p {
@@ -95,13 +107,17 @@ body {
   font-size: 1.1rem;
 }
 
- .slideshow {
+/* ==============================
+   SLIDESHOW (DESKTOP DEFAULT)
+============================== */
+.slideshow {
   width: 100%;
-  max-width: 400px;
-  height: 220px;
+  max-width: 420px;
+  height: 240px;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
 
 .slideshow img {
@@ -109,6 +125,7 @@ body {
   height: 100%;
   object-fit: cover;
   position: absolute;
+  inset: 0;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
@@ -116,6 +133,10 @@ body {
 .slideshow img.active {
   opacity: 1;
 }
+
+/* ==============================
+   SMALL MOBILE
+============================== */
 @media (max-width: 480px) {
   .navbar ul {
     gap: 12px;
@@ -123,12 +144,11 @@ body {
   }
 }
 
-
- 
-/* MOBILE & TABLET */
+/* ==============================
+   MOBILE & TABLET
+============================== */
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   body {
     padding-top: 70px;
   }
@@ -142,7 +162,6 @@ body {
     font-size: 16px;
   }
 
-  /* INTRO */
   .intro {
     padding: 25px 15px;
   }
@@ -155,7 +174,6 @@ body {
     font-size: 0.95rem;
   }
 
-  /* SUBJECT SECTION */
   .subject-section {
     padding: 35px 15px;
   }
@@ -165,7 +183,6 @@ body {
     margin-bottom: 15px;
   }
 
-  /* STACK CONTENT */
   .subject-content {
     flex-direction: column;
     text-align: center;
@@ -176,15 +193,10 @@ body {
     font-size: 0.95rem;
   }
 
-  /* SLIDESHOW */
+  /* SLIDESHOW MOBILE */
   .slideshow {
     max-width: 100%;
-    height: 180px;
+    height: 35vh;
+    max-height: 300px;
   }
-
-  .slideshow {
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
-
-}
- 
