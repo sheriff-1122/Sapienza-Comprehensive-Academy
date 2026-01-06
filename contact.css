@@ -128,3 +128,15 @@ body {
     font-size: 18px;
   }
 }
+ .logo {
+   position: absolute;
+   left: 20px;
+   display: flex;
+   align-items: center;
+ }
+
+ .logo img {
+   height: 70px;
+   width: auto;
+   object-fit: contain;
+ }
