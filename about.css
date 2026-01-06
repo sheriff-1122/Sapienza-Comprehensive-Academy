@@ -65,7 +65,7 @@
    PAGE TITLE (H1)
 ========================= */
 .page-title {
-  position: sticky;          /* FIXED ISSUE */
+  position:relative;          /* FIXED ISSUE */
   top: 100px;                /* sits below navbar */
   margin: 0 auto 40px;
   width: fit-content;
